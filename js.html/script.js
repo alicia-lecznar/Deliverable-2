@@ -1,12 +1,14 @@
 
-
-
 function what_to_wear() {
     var tempFahr = prompt("What is the temperature?");
     var eventType = prompt("Is the event casual, semi-formal, or formal?");
 
+
     var dressLevel;
     var jacketType;
+
+    var result;
+
 
     if (eventType === "casual") {
         dressLevel = "something comfy";
@@ -28,15 +30,11 @@ function what_to_wear() {
         jacketType = "no jacket";
     }
 
- alert("Since it is " + tempFahr + " degrees and you are going to a " + eventType + " event, you should wear " + dressLevel + " and " + jacketType );
+    result="Since it is " + tempFahr + " degrees and you are going to a " + eventType + " event, you should wear " + dressLevel + " and " + jacketType;
 
-    return (result);
+
+    console.log(result);
 
 }
 
-    console.log(what_to_wear());
-
-
-
-
-
+    what_to_wear()
